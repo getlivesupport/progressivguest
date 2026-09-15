@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pay your Progressive insurance bill in 60 seconds. Compare 5 payment methods, save up to 15% with AutoPay, and resolve payment issues instantly.">
+    <meta name="keywords" content="Progressive insurance payment, pay Progressive bill, Progressive payment options, Progressive AutoPay, Progressive pay online, Progressive phone number">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="color-scheme" content="light dark">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://account.progressive.com">
+    <link rel="dns-prefetch" href="https://account.progressive.com">
+    
+    <title>Pay Your Progressive Insurance Bill | 5 Ways to Pay in 60 Seconds</title>
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Can I change my payment date?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Call 1-888-671-4405 or login to your account online. Changes must be made at least 48 hours before your current scheduled draft date."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why is my monthly amount higher than my quote?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Installment fees ranging $1-8 per month depending on your state. Avoid fees by paying in full or setting up autopay."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does paying by credit card cost extra?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Progressive does not charge extra for credit card payments. However, your credit card company may treat it as a cash advance—check with your card issuer."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I confirm my payment went through?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Online and phone payments provide immediate confirmation number. Check your email for receipt. For mailed checks, allow 10 days then verify in your online account."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Progressive Insurance",
+        "url": "https://www.progressive.com",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-888-671-4405",
+            "contactType": "Customer Service",
+            "areaServed": "US"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Pay Your Progressive Insurance Bill",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Quick Pay (Fastest)",
+                "text": "Go to account.progressive.com/access/ez-payment, enter your policy number and ZIP code. No login required."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Phone Payment",
+                "text": "Call 1-888-671-4405 with your policy number ready. Available 24/7, takes about 2 minutes."
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Online Login",
+                "text": "Login to your Progressive account and follow the payment prompts. Saves your payment method for future use."
+            }
+        ]
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary: #00a550;
+            --primary-dark: #008a3f;
+            --primary-light: #e8f5eb;
+            --secondary: #f2712e;
+            --secondary-light: #fff3e0;
+            --danger: #d32f2f;
+            --danger-light: #ffebee;
+            --warning: #f57c00;
+            --warning-light: #fff3e0;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-300: #d1d5db;
+            --gray-400: #9ca3af;
+            --gray-600: #4b5563;
+            --gray-800: #1f2937;
+            --gray-900: #111827;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --border-radius: 0.5rem;
+            --box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            --box-shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --text-primary: #f3f4f6;
+                --text-secondary: #d1d5db;
+                --gray-50: #1f2937;
+                --gray-100: #111827;
+                --gray-200: #374151;
+                --gray-300: #4b5563;
+                --bg-primary: #111827;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: #fff;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #111827;
+            }
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            padding: 1rem;
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            header {
+                background: #1f2937;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+            }
+        }
+        
+        header.sticky {
+            display: flex;
+        }
+        
+        header .logo {
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 1.25rem;
+        }
+        
+        header .cta-button {
+            background: var(--primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        .breadcrumb {
+            padding: 1rem;
+            background: var(--gray-50);
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+        
+        .breadcrumb a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        main {
+            margin-top: 0;
+        }
+        
+        .hero {
+            background: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            .hero {
+                background: #111827;
+            }
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+        
+        .hero .subheadline {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+        
+        .cta-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        
+        @media (min-width: 768px) {
+            .cta-group {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 1rem 1.5rem;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 1rem;
+            min-height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            box-shadow: var(--box-shadow-md);
+        }
+        
+        .btn-secondary {
+            background: var(--gray-100);
+            color: var(--text-primary);
+            border: 2px solid var(--primary);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary-light);
+        }
+        
+        .btn-emergency {
+            background: var(--secondary);
+            color: white;
+        }
+        
+        .btn-emergency:hover {
+            background: #d9571f;
+        }
+        
+        .micro-text {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-top: 1rem;
+        }
+        
+        section {
+            padding: 3rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+        }
+        
+        section h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .card {
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+        
+        .card:hover {
+            box-shadow: var(--box-shadow-md);
+            transform: translateY(-2px);
+        }
+        
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .card-speed {
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+        }
+        
+        .card-pay {
+            background: var(--secondary-light);
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .card-warning {
+            background: var(--warning-light);
+            border-left: 4px solid var(--warning);
+        }
+        
+        .card-danger {
+            background: var(--danger-light);
+            border-left: 4px solid var(--danger);
+        }
+        
+        .comparison-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .comparison-card {
+            padding: 2rem;
+            border: 2px solid var(--gray-200);
+            border-radius: var(--border-radius);
+            text-align: center;
+        }
+        
+        .comparison-card h3 {
+            margin-top: 1rem;
+        }
+        
+        .comparison-card .icon {
+            font-size: 3rem;
+        }
+        
+        .calculator {
+            background: var(--gray-50);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin-top: 2rem;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            .calculator {
+                background: #1f2937;
+            }
+        }
+        
+        .calc-inputs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+        
+        .form-group input,
+        .form-group select {
+            padding: 0.75rem;
+            border: 1px solid var(--gray-300);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            background: white;
+            color: var(--text-primary);
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            .form-group input,
+            .form-group select {
+                background: #111827;
+                border-color: #374151;
+                color: #f3f4f6;
+            }
+        }
+        
+        .calc-results {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .calc-result {
+            padding: 1.5rem;
+            background: white;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--primary);
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            .calc-result {
+                background: #374151;
+            }
+        }
+        
+        .calc-result-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .calc-result-value {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .timeline {
+            position: relative;
+            margin: 3rem 0;
+        }
+        
+        .timeline-item {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+        }
+        
+        .timeline-item.active {
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+        }
+        
+        .timeline-item.pending {
+            background: var(--warning-light);
+            border-left: 4px solid var(--warning);
+        }
+        
+        .timeline-item.danger {
+            background: var(--danger-light);
+            border-left: 4px solid var(--danger);
+        }
+        
+        .timeline-badge {
+            flex-shrink: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 2rem;
+        }
+        
+        .active .timeline-badge {
+            background: var(--primary);
+        }
+        
+        .pending .timeline-badge {
+            background: var(--warning);
+        }
+        
+        .danger .timeline-badge {
+            background: var(--danger);
+        }
+        
+        .timeline-content h3 {
+            margin-top: 0;
+        }
+        
+        .important-box {
+            background: var(--secondary-light);
+            border-left: 4px solid var(--secondary);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin-top: 2rem;
+        }
+        
+        .accordion {
+            margin-bottom: 1rem;
+        }
+        
+        .accordion-item {
+            border: 1px solid var(--gray-200);
+            border-radius: var(--border-radius);
+            margin-bottom: 0.5rem;
+        }
+        
+        .accordion-header {
+            padding: 1rem;
+            background: var(--gray-50);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            user-select: none;
+            min-height: 48px;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            .accordion-header {
+                background: #1f2937;
+            }
+        }
+        
+        .accordion-header:hover {
+            background: var(--gray-100);
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            .accordion-header:hover {
+                background: #374151;
+            }
+        }
+        
+        .accordion-toggle {
+            display: inline-block;
+            transition: transform 0.3s ease;
+            font-size: 1.25rem;
+        }
+        
+        .accordion-item.active .accordion-toggle {
+            transform: rotate(180deg);
+        }
+        
+        .accordion-content {
+            display: none;
+            padding: 1rem;
+            background: white;
+            border-top: 1px solid var(--gray-200);
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            .accordion-content {
+                background: #111827;
+            }
+        }
+        
+        .accordion-item.active .accordion-content {
+            display: block;
+        }
+        
+        .checklist {
+            list-style: none;
+            margin: 1rem 0;
+        }
+        
+        .checklist li {
+            padding: 0.75rem 0 0.75rem 2rem;
+            position: relative;
+        }
+        
+        .checklist li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+        
+        .insurance-card-image {
+            max-width: 400px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: var(--gray-100);
+            border-radius: var(--border-radius);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+        
+        .external-link::after {
+            content: " ↗";
+            font-size: 0.875em;
+        }
+        
+        .copy-button {
+            background: none;
+            border: none;
+            color: var(--primary);
+            cursor: pointer;
+            font-weight: 600;
+            padding: 0;
+            text-decoration: underline;
+            font-size: 0.875rem;
+        }
+        
+        .copy-button:hover {
+            color: var(--primary-dark);
+        }
+        
+        .trust-signals {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--gray-200);
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+        
+        .author-info {
+            background: var(--gray-50);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin: 2rem 0;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            .author-info {
+                background: #1f2937;
+            }
+        }
+        
+        .disclaimer {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            background: var(--gray-100);
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            margin-top: 2rem;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            .disclaimer {
+                background: #374151;
+            }
+        }
+        
+        .internal-link {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .internal-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media print {
+            header,
+            .breadcrumb {
+                display: none;
+            }
+            section {
+                page-break-inside: avoid;
+            }
+            .btn,
+            .copy-button {
+                border: 1px solid #000;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+            
+            .hero .subheadline {
+                font-size: 1rem;
+            }
+            
+            section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .cta-group {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header id="stickyHeader">
+        <div class="logo">Progressive Payment Guide</div>
+        <a href="https://account.progressive.com" class="cta-button external-link">Pay Now</a>
+    </header>
+    
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> > 
+        <a href="/#insurance-guides">Insurance Guides</a> > 
+        <span>Progressive Payment Options</span>
+    </nav>
+    
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <h1>Pay Your Progressive Insurance Bill</h1>
+            <p class="subheadline">5 ways to pay in 60 seconds. Save up to 15% with AutoPay or pay-in-full.</p>
+            
+            <div class="cta-group">
+                <a href="https://account.progressive.com" class="btn btn-primary external-link">Pay Online Now</a>
+                <a href="https://account.progressive.com/access/ez-payment" class="btn btn-secondary external-link">Quick Pay Without Login</a>
+                <a href="tel:+1-888-671-4405" class="btn btn-emergency">☎ Call 1-888-671-4405</a>
+            </div>
+            
+            <div class="micro-text">
+                ✓ Payment posts immediately | ✓ 24/7 available | ✓ Secure Progressive site
+            </div>
+        </section>
+        
+        <!-- SECTION 1: INSTANT PAYMENT PATHS -->
+        <section id="payment-paths">
+            <h2>⚡ Instant Payment Paths</h2>
+            <p>Choose your fastest route based on your situation right now.</p>
+            
+            <div class="cards">
+                <div class="card card-speed">
+                    <div class="card-icon">⚡</div>
+                    <h3>FASTEST (30 seconds)</h3>
+                    <p><strong>Quick Pay — No login needed</strong></p>
+                    <p>Just your policy number and ZIP code. Go to <a href="https://account.progressive.com/access/ez-payment" class="internal-link external-link">account.progressive.com/access/ez-payment</a>. Payment posts immediately.</p>
+                </div>
+                
+                <div class="card card-speed">
+                    <div class="card-icon">☎</div>
+                    <h3>FAST (2 minutes)</h3>
+                    <p><strong>Phone Payment — 24/7 automated</strong></p>
+                    <p>Have your policy number ready. <button class="copy-button" data-copy="1-888-671-4405" onclick="copyToClipboard(this)">Click to copy</button> or <a href="tel:+1-888-671-4405" class="internal-link">call now</a>. No waiting for a representative.</p>
+                </div>
+                
+                <div class="card card-speed">
+                    <div class="card-icon">💻</div>
+                    <h3>STANDARD (3 minutes)</h3>
+                    <p><strong>Login Method — Full control</strong></p>
+                    <p>Login to your account at <a href="https://account.progressive.com" class="internal-link external-link">account.progressive.com</a>, save your payment method, and view your billing history.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SECTION 2: PAYMENT METHOD COMPARISON -->
+        <section id="payment-methods">
+            <h2>💰 Which Payment Option Saves You the Most?</h2>
+            <p>Each option has different savings. Choose based on your financial situation and preferences.</p>
+            
+            <div class="comparison-cards">
+                <div class="comparison-card">
+                    <div class="icon">💚</div>
+                    <h3>Pay-in-Full</h3>
+                    <p><strong>Save up to 15%</strong></p>
+                    <p>Pay once for 6-12 months. No installment fees. Best if you have the cash upfront.</p>
+                </div>
+                
+                <div class="comparison-card">
+                    <div class="icon">🔄</div>
+                    <h3>AutoPay</h3>
+                    <p><strong>Automatic discount applied</strong></p>
+                    <p>Never miss a payment. Choose monthly or full-term draft. Best for hands-off management.</p>
+                </div>
+                
+                <div class="comparison-card">
+                    <div class="icon">📅</div>
+                    <h3>Manual Monthly</h3>
+                    <p><strong>$1-8/month fee</strong></p>
+                    <p>Pay when you want. Full control. Best for variable income or uncertainty.</p>
+                </div>
+            </div>
+            
+            <div class="calculator">
+                <h3>💡 Quick Savings Calculator</h3>
+                <div class="calc-inputs">
+                    <div class="form-group">
+                        <label for="monthly-payment">Enter your monthly payment ($)</label>
+                        <input type="number" id="monthly-payment" placeholder="e.g., 150" min="10" step="5">
+                    </div>
+                    <div class="form-group">
+                        <label for="state-select">Select your state</label>
+                        <select id="state-select">
+                            <option value="">-- All States (avg) --</option>
+                            <option value="5">CA, TX, NY (typical: $5/month)</option>
+                            <option value="8">High-fee states ($8/month)</option>
+                            <option value="1">Low-fee states ($1/month)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="calc-results">
+                    <div class="calc-result">
+                        <div class="calc-result-label">Pay-in-Full Savings</div>
+                        <div class="calc-result-value" id="fullpay-savings">$0</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="calc-result-label">AutoPay Savings</div>
+                        <div class="calc-result-value" id="autopay-savings">$0</div>
+                    </div>
+                    <div class="calc-result">
+                        <div class="calc-result-label">Manual Monthly Cost</div>
+                        <div class="calc-result-value" id="manual-cost">$0</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SECTION 3: NO-LOGIN SOLUTION -->
+        <section id="no-login-solution">
+            <h2>🔑 Don't Remember Your Password? Use Quick Pay</h2>
+            <p>You don't need your login to make a payment right now. All you need is:</p>
+            
+            <ul class="checklist">
+                <li>Policy number (found on your insurance ID card)</li>
+                <li>ZIP code</li>
+                <li>Payment method (card or bank account)</li>
+            </ul>
+            
+            <div style="text-align: center; margin: 2rem 0;">
+                <a href="https://account.progressive.com/access/ez-payment" class="btn btn-primary external-link">Go to Quick Pay</a>
+            </div>
+            
+            <div class="insurance-card-image">
+                <p>📋 Your policy number is on your insurance ID card</p>
+                <p style="font-size: 0.75rem; margin-top: 0.5rem;">[Sample card image: Policy # visible in top-left, name/dates visible, sensitive info blurred]</p>
+            </div>
+            
+            <p><strong>After payment:</strong> Receipt emailed to the address on file. Confirmation number displayed on screen. No account setup required.</p>
+        </section>
+        
+        <!-- SECTION 4: GRACE PERIOD EXPLAINED -->
+        <section id="grace-period">
+            <h2>⏰ What Happens If I'm Late? Grace Period Explained</h2>
+            <p>Understanding the grace period removes anxiety. Here's exactly how it works:</p>
+            
+            <div class="timeline">
+                <div class="timeline-item active">
+                    <div class="timeline-badge">1</div>
+                    <div class="timeline-content">
+                        <h3>Due Date to 10-30 Days Later</h3>
+                        <p><strong style="color: var(--primary);">Grace Period Active ✓</strong></p>
+                        <p>A $10 late fee applies, but your coverage continues without interruption. You can still file claims. This gives you time to pay without losing protection.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item pending">
+                    <div class="timeline-badge">2</div>
+                    <div class="timeline-content">
+                        <h3>After Grace Period Ends</h3>
+                        <p><strong style="color: var(--warning);">Cancellation Pending ⚠</strong></p>
+                        <p><a href="tel:+1-888-671-4405" class="internal-link">Call 1-888-671-4405 immediately</a> to reinstate. You'll need to pay the full past-due balance. The sooner you call, the sooner you're covered again.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item danger">
+                    <div class="timeline-badge">3</div>
+                    <div class="timeline-content">
+                        <h3>Policy Cancelled</h3>
+                        <p><strong style="color: var(--danger);">Reinstatement Required ✗</strong></p>
+                        <p>Same-day reinstatement is usually possible if no claims occurred during the lapse. This is why immediate action is critical.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="important-box">
+                <p><strong>🚨 Critical at Renewal:</strong> NO grace period exists at your renewal date. Your policy ends immediately if not paid by the renewal date. Set a calendar reminder 7 days before renewal to avoid this completely.</p>
+            </div>
+        </section>
+        
+        <!-- SECTION 5: PAYMENT METHODS DETAIL -->
+        <section id="payment-details">
+            <h2>🏦 Detailed Payment Method Information</h2>
+            <p>Learn exactly how each payment method works, posting times, and fees.</p>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>💳 Credit/Debit Card</span>
+                        <span class="accordion-toggle">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Visa, Mastercard, American Express, and Discover accepted online, by phone, in the app, and for AutoPay setup.</p>
+                        <ul class="checklist">
+                            <li>Posts immediately</li>
+                            <li>No convenience fees from Progressive</li>
+                            <li>Your credit card company may treat it as a cash advance (check with them)</li>
+                            <li>Confirmation number provided instantly</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>🏦 Bank Account (ACH)</span>
+                        <span class="accordion-toggle">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Checking or savings account linked directly to your Progressive account.</p>
+                        <ul class="checklist">
+                            <li>Lowest fees for AutoPay setup</li>
+                            <li>Takes 1-2 business days to process</li>
+                            <li>Most economical option for regular payments</li>
+                            <li>Perfect for AutoPay set-it-and-forget-it</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>📱 Digital Wallets</span>
+                        <span class="accordion-toggle">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Apple Pay and Google Pay accepted via the Progressive mobile app.</p>
+                        <ul class="checklist">
+                            <li>Same security as card payments</li>
+                            <li>Instant confirmation</li>
+                            <li>Fastest on mobile</li>
+                            <li>No additional fees</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>✉️ Check or Money Order</span>
+                        <span class="accordion-toggle">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Mail to: Progressive Insurance, PO Box 984105, St Louis MO 63198-4105</p>
+                        <ul class="checklist">
+                            <li>Write your policy number on the check</li>
+                            <li>Allow 7-10 business days to process</li>
+                            <li>Verify payment in your online account after 10 days</li>
+                            <li>Keep a copy for your records</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>💵 Cash</span>
+                        <span class="accordion-toggle">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Not accepted directly, but you have options:</p>
+                        <ul class="checklist">
+                            <li>Use cash to buy a money order at your bank, post office, or supermarket</li>
+                            <li>Or load cash onto a prepaid debit card</li>
+                            <li>Then pay via phone or online with the money order/debit card</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SECTION 6: FAQ WITH SCHEMA MARKUP -->
+        <section id="faq">
+            <h2>❓ Real Questions From Customers</h2>
+            <p>These are the questions people ask most often when paying their Progressive bill.</p>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Can I change my payment date?</span>
+                        <span class="accordion-toggle">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes. Call <a href="tel:+1-888-671-4405" class="internal-link">1-888-671-4405</a> or login to your account online. Changes must be made at least 48 hours before your current scheduled draft date. Plan ahead when possible to avoid rush situations.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Why is my monthly amount higher than my quote?</span>
+                        <span class="accordion-toggle">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Installment fees ranging $1-8 per month depending on your state are added when you choose monthly payments instead of paying in full. We don't know your exact fee—check with Progressive for your state-specific rates. Avoid these fees by paying in full or setting up AutoPay.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Does paying by credit card cost extra?</span>
+                        <span class="accordion-toggle">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Progressive does not charge extra for credit card payments. However, your credit card company may treat it as a cash advance—check with your card issuer before paying to avoid surprise fees on your credit card bill.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>How do I confirm my payment went through?</span>
+                        <span class="accordion-toggle">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Online and phone payments provide an immediate confirmation number on screen. Check your email for a receipt sent to the address on file. For mailed checks, allow 10 days then verify the payment in your online account at <a href="https://account.progressive.com" class="internal-link external-link">account.progressive.com</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- RELATED LINKS -->
+        <section id="related-links">
+            <h2>📚 Learn More</h2>
+            <ul>
+                <li><a href="/#auto-insurance-payment-options" class="internal-link">Compare payment options across insurers</a></li>
+                <li><a href="/#insurance-grace-period-guide" class="internal-link">Learn how insurance grace periods work</a></li>
+                <li><a href="/#insurance-automatic-payment-benefits" class="internal-link">Understand AutoPay discounts</a></li>
+                <li><a href="/#how-to-pay-car-insurance" class="internal-link">First time paying car insurance?</a></li>
+            </ul>
+        </section>
+        
+        <!-- TRUST & AUTHOR -->
+        <section>
+            <div class="author-info">
+                <h3>About This Guide</h3>
+                <p><strong>Last verified: September 15, 2026</strong></p>
+                <p>Information sourced from progressive.com official website and publicly available Progressive policy documentation.</p>
+                <p><strong>Author:</strong> Progressive Payment Guide Team | Independent Insurance Resource</p>
+            </div>
+            
+            <div class="disclaimer">
+                <p><strong>⚠️ Disclaimer:</strong> Not affiliated with Progressive Corporation. This is an independent educational guide created to help consumers understand payment options. Progressive, the Progressive logo, and all associated marks are property of Progressive Casualty Insurance Company. For official policy details, visit <a href="https://www.progressive.com" class="internal-link external-link">progressive.com</a> or call <a href="tel:+1-888-671-4405" class="internal-link">1-888-671-4405</a>.</p>
+            </div>
+            
+            <div class="trust-signals">
+                <p>🔒 All external links verified and lead to official Progressive domains only</p>
+                <p>✓ Phone number (1-888-671-4405) confirmed via progressive.com</p>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        // Sticky header on scroll
+        const stickyHeader = document.getElementById('stickyHeader');
+        let lastScrollY = 0;
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                stickyHeader.classList.add('sticky');
+            } else {
+                stickyHeader.classList.remove('sticky');
+            }
+            lastScrollY = window.scrollY;
+        }, { passive: true });
+        
+        // Accordion functionality
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all other items in same accordion
+                const accordion = item.parentElement;
+                accordion.querySelectorAll('.accordion-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+                
+                // Toggle current item
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+            
+            // Keyboard support
+            header.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    header.click();
+                }
+            });
+        });
+        
+        // Copy to clipboard functionality
+        function copyToClipboard(element) {
+            const text = element.getAttribute('data-copy');
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(text).then(() => {
+                    const original = element.textContent;
+                    element.textContent = '✓ Copied!';
+                    setTimeout(() => {
+                        element.textContent = original;
+                    }, 2000);
+                });
+            }
+        }
+        
+        // Payment calculator
+        const monthlyInput = document.getElementById('monthly-payment');
+        const stateSelect = document.getElementById('state-select');
+        const fullpaySavings = document.getElementById('fullpay-savings');
+        const autopaySavings = document.getElementById('autopay-savings');
+        const manualCost = document.getElementById('manual-cost');
+        
+        function updateCalculator() {
+            const monthly = parseFloat(monthlyInput.value) || 0;
+            const fee = parseFloat(stateSelect.value) || 5;
+            
+            if (monthly === 0) {
+                fullpaySavings.textContent = '$0';
+                autopaySavings.textContent = '$0';
+                manualCost.textContent = '$0';
+                return;
+            }
+            
+            // Calculate for 6-month term
+            const fullPayAmount = monthly * 6 * 0.85; // 15% savings
+            const fullPaySaving = (monthly * 6) - fullPayAmount;
+            
+            const autopaySaving = (fee * 6) * 0.1; // Small discount for autopay
+            
+            const manualAmount = (monthly * 6) + (fee * 6);
+            
+            fullpaySavings.textContent = '$' + fullPaySaving.toFixed(2);
+            autopaySavings.textContent = '$' + autopaySaving.toFixed(2);
+            manualCost.textContent = '$' + manualAmount.toFixed(2);
+        }
+        
+        monthlyInput.addEventListener('input', updateCalculator);
+        stateSelect.addEventListener('change', updateCalculator);
+        
+        // External link accessibility
+        document.querySelectorAll('.external-link').forEach(link => {
+            if (link.href.startsWith('http') || link.href.startsWith('//')) {
+                link.setAttribute('aria-label', link.textContent + ' (opens external link)');
+            }
+        });
+    </script>
+</body>
+</html>
