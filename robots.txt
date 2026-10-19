@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://progressivguest.com/sitemap.xml
+Sitemap: https://getlivesupport.github.io/progressivguest/sitemap.xml
