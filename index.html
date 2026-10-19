@@ -438,12 +438,15 @@
         color: var(--muted);
       }
 
-      .compare-row {
+      .who-grid,
+      .eeat-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 1rem;
       }
 
+      .who-box,
+      .eeat-box,
       .compare-box {
         background: var(--surface);
         border: 1px solid var(--border);
@@ -451,10 +454,22 @@
         padding: 1.3rem;
       }
 
+      .who-box strong,
+      .eeat-box strong,
       .compare-box strong {
         display: block;
         margin-top: 0.5rem;
         font-size: 1.2rem;
+      }
+
+      .eeat-box {
+        background: linear-gradient(180deg, #ffffff 0%, #f4fbf7 100%);
+      }
+
+      .compare-row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
       }
 
       .calculator {
@@ -604,6 +619,18 @@
         transform: rotate(180deg);
       }
 
+      .disclaimer-box {
+        background: #fffaf2;
+        border: 1px solid #f7d9a8;
+        border-radius: var(--radius);
+        padding: 1.2rem;
+        color: var(--text);
+      }
+
+      .disclaimer-box p {
+        color: var(--muted);
+      }
+
       .cta-band {
         background: linear-gradient(135deg, var(--primary) 0%, var(--primary-strong) 100%);
         color: #fff;
@@ -728,6 +755,76 @@
               <li><span class="check">✓</span><span>Save time by comparing AutoPay, pay-in-full, and monthly payment options.</span></li>
             </ul>
           </aside>
+        </div>
+      </section>
+
+      <section aria-labelledby="who-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="who-title">Who this page is for</h2>
+            <p>This page helps people who need straightforward answers about making a Progressive insurance payment quickly and confidently.</p>
+          </div>
+
+          <div class="who-grid">
+            <div class="who-box">
+              <div aria-hidden="true">🧾</div>
+              <strong>Policyholders with a due date coming up</strong>
+              <p>People who want to understand the fastest way to pay, avoid late fees, and keep their coverage active.</p>
+            </div>
+
+            <div class="who-box">
+              <div aria-hidden="true">🔑</div>
+              <strong>People who do not want to log in</strong>
+              <p>Readers who need a guest payment or quick pay path without manually signing into their Progressive account.</p>
+            </div>
+
+            <div class="who-box">
+              <div aria-hidden="true">📉</div>
+              <strong>Billing and payment comparison shoppers</strong>
+              <p>Consumers comparing one time payment, AutoPay, pay-in-full, and monthly billing options before they decide.</p>
+            </div>
+
+            <div class="who-box">
+              <div aria-hidden="true">⚠️</div>
+              <strong>People dealing with a late or missed payment</strong>
+              <p>Visitors who need quick, practical guidance about grace periods, missed billing, and next steps before renewal or cancellation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="eeat-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="eeat-title">Why this guidance is useful</h2>
+            <p>We focus on clarity, practical action, and real-world payment concerns rather than vague insurance jargon.</p>
+          </div>
+
+          <div class="eeat-grid">
+            <div class="eeat-box">
+              <div aria-hidden="true">🧠</div>
+              <strong>Experience-led</strong>
+              <p>We explain the payment paths people actually use when they need to settle a bill fast.</p>
+            </div>
+
+            <div class="eeat-box">
+              <div aria-hidden="true">📚</div>
+              <strong>Expert-focused</strong>
+              <p>We cover billing choices, grace period issues, AutoPay behavior, and common payment mistakes without fluff.</p>
+            </div>
+
+            <div class="eeat-box">
+              <div aria-hidden="true">✅</div>
+              <strong>Accuracy-minded</strong>
+              <p>We prioritize plain-language explanations, clear next steps, and realistic caution around policy dates and renewal deadlines.</p>
+            </div>
+
+            <div class="eeat-box">
+              <div aria-hidden="true">🔍</div>
+              <strong>Trust-first</strong>
+              <p>We avoid fake certainty and clearly separate general educational guidance from account-specific billing processes.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -933,6 +1030,21 @@
         </div>
       </section>
 
+      <section aria-labelledby="disclaimer-title">
+        <div class="container">
+          <div class="section-head">
+            <h2 id="disclaimer-title">Important disclaimer and note</h2>
+            <p>Educational content for general guidance only, not an official Progressive account portal.</p>
+          </div>
+
+          <div class="disclaimer-box">
+            <p><strong>Educational use only:</strong> This page explains common Progressive payment paths and insurance billing concepts in plain language. It is not an official Progressive account login, payment portal, or legal, tax, or financial advisor.</p>
+            <p><strong>Account-specific details can vary:</strong> Payment methods, billing schedules, grace periods, and renewal policies depend on your state, policy, and account history. Always confirm the exact terms on your policy documents or with the insurer before making a final decision.</p>
+            <p><strong>Not a substitute for official account support:</strong> If your policy is at risk of cancellation or you need a final confirmation, review your exact billing dashboard or contact the official support channel for your policy details.</p>
+          </div>
+        </div>
+      </section>
+
       <section>
         <div class="container">
           <div class="cta-band">
@@ -949,6 +1061,7 @@
         <div class="footer-box">
           <p><strong>Need help?</strong> Contact support at 1 (856) 900-7834 or use the guest payment route if you need a fast answer.</p>
           <p>This page is designed to help people understand Progressive payment options, guest payment steps, and common billing questions in a clear and human-first format.</p>
+          <p><strong>Disclosure:</strong> This content is informational and intended for general education. It does not replace an official Progressive account review or your insurer’s exact billing terms.</p>
         </div>
       </div>
     </footer>
